@@ -1,7 +1,7 @@
 import React, { useState, useRef, useContext, useEffect } from 'react';
 import emailjs from "@emailjs/browser";
 import "./ContactForm.css";
-import CheckMark from "../../assets/CheckMarksmall.png";
+import CheckMark from "../../assets/webp/CheckMarksmall.webp";
 import { AppContext } from '../AppComponents/AppComponents';
 import FadeLoader from "react-spinners/ClipLoader";
 

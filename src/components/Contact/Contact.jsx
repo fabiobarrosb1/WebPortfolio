@@ -1,17 +1,17 @@
 import React, { useContext, useState } from 'react';
 import "./Contact.css";
-import GithubWhite from "../../assets/githubWhitesmall.png";
-import GithibBlack from "../../assets/githubBlacksmall.png";
-import LinkedinWhite from "../../assets/linkedinWhitesmall.png";
-import LinkedinBlack from "../../assets/linkedinBlacksmall.png";
-import DownloadWhite from "../../assets/downloadWhitesmall.png";
-import DownloadBlack from "../../assets/downloadBlacksmall.png";
+import GithubWhite from "../../assets/webp/githubWhitesmall.webp";
+import GithibBlack from "../../assets/webp/githubBlacksmall.webp";
+import LinkedinWhite from "../../assets/webp/linkedinWhitesmall.webp";
+import LinkedinBlack from "../../assets/webp/linkedinBlacksmall.webp";
+import DownloadWhite from "../../assets/webp/downloadWhitesmall.webp";
+import DownloadBlack from "../../assets/webp/downloadBlacksmall.webp";
 import {saveAs} from "file-saver";
 import ContactForm from '../ContactForm/ContactForm';
-import MailWhite from "../../assets/email-4small.png";
-import MailBlack from "../../assets/email-3small.png";
-import SayHi from "../../assets/SayHismall.png";
-import MessageSent from "../../assets/MessageSent1small.png";
+import MailWhite from "../../assets/webp/email-4small.webp";
+import MailBlack from "../../assets/webp/email-3small.webp";
+import SayHi from "../../assets/webp/SayHismall.webp";
+import MessageSent from "../../assets/webp/MessageSent1small.webp";
 import { AppContext } from '../AppComponents/AppComponents';
 
 

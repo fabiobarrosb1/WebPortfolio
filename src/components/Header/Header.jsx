@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useContext } from 'react';
 import "./Header.css";
-import MailBlack from "../../assets/email-3small.png";
-import MailWhite from "../../assets/email-4small.png";
+import MailBlack from "../../assets/webp/email-3small.webp";
+import MailWhite from "../../assets/webp/email-4small.webp";
 import { Link } from "react-scroll";
-import GithubWhite from "../../assets/githubWhitesmall.png";
-import GithubBlack from "../../assets/githubBlacksmall.png";
-import LinkedinWhite from "../../assets/linkedinWhitesmall.png";
-import LinkedinBlack from "../../assets/linkedinBlacksmall.png";
-import FLogo from "../../assets/F-logosmall.png";
+import GithubWhite from "../../assets/webp/githubWhitesmall.webp";
+import GithubBlack from "../../assets/webp/githubBlacksmall.webp";
+import LinkedinWhite from "../../assets/webp/linkedinWhitesmall.webp";
+import LinkedinBlack from "../../assets/webp/linkedinBlacksmall.webp";
+import FLogo from "../../assets/webp/F-logosmall.webp";
 import { AppContext } from '../AppComponents/AppComponents';
 import HamburgerMenu from './HamburgerMenu';
 

@@ -2,12 +2,12 @@ import React, { useContext, useState } from 'react';
 import "./Footer.css";
 import { Link } from "react-scroll";
 import { AppContext } from '../AppComponents/AppComponents';
-import MailBlack from "../../assets/email-3small.png";
-import MailWhite from "../../assets/email-4small.png";
-import GithubWhite from "../../assets/githubWhitesmall.png";
-import GithubBlack from "../../assets/githubBlacksmall.png";
-import LinkedinWhite from "../../assets/linkedinWhitesmall.png";
-import LinkedinBlack from "../../assets/linkedinBlacksmall.png";
+import MailBlack from "../../assets/webp/email-3small.webp";
+import MailWhite from "../../assets/webp/email-4small.webp";
+import GithubWhite from "../../assets/webp/githubWhitesmall.webp";
+import GithubBlack from "../../assets/webp/githubBlacksmall.webp";
+import LinkedinWhite from "../../assets/webp/linkedinWhitesmall.webp";
+import LinkedinBlack from "../../assets/webp/linkedinBlacksmall.webp";
 
 const Footer = () => {
   const context = useContext(AppContext);

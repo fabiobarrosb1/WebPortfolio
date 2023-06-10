@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import "./Projects.css";
 import Card from '../Card/Card';
-import SuperM from "../../assets/SuperMsmall.png";
-import FoodTracker from "../../assets/FoodTrackersmall.png";
-import FitClub from "../../assets/FitClubsmall.png";
+import SuperM from "../../assets/webp/SuperMsmall.webp";
+import FoodTracker from "../../assets/webp/FoodTrackersmall.webp";
+import FitClub from "../../assets/webp/FitClubsmall.webp";
 import { AppContext } from '../AppComponents/AppComponents';
 
 
