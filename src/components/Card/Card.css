@@ -1,0 +1,345 @@
+.card {
+  display: flex;
+    margin: 3rem 10rem;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(35,37,49,.5)),to(rgba(15,15,24,.5)));
+    background: -webkit-linear-gradient(top,rgba(35,37,49,.5),rgba(15,15,24,.5));
+    background: linear-gradient(180deg,rgba(35,37,49,.5),rgba(15,15,24,.5));
+    border: 0.2rem solid #20222e;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backdrop-filter: blur(54px);
+    backdrop-filter: blur(54px);
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    position: relative;
+}
+
+.card.dark-mode {
+  background-color: transparent;
+}
+
+
+.project-card {
+  flex: 1;
+  background-color: transparent;
+
+}
+
+.project-card.dark-mode {
+  background-color: transparent;
+}
+
+.project-card-left.dark-mode {
+  background-color: transparent;
+}
+
+.project-card-middle.dark-mode {
+  background-color: transparent;
+}
+
+.project-top {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  background-color: transparent;
+  align-items: center;
+}
+
+.project-top.dark-mode {
+  background-color: transparent;
+}
+
+.project-card-heading {
+  -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-writing-mode: tb-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: tb-rl;
+    font-family: D-DIN Condensed,sans-serif;
+    font-size: 1.3rem;
+    line-height: 92.4%;
+    letter-spacing: .19em;
+    color: #8b8b8b;
+    line-height: 120%;
+    margin: 0;
+    font-size: 58%;
+}
+
+.project-card-middle {
+  flex: 1;
+}
+
+.project-card:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5rem;
+  right: -5rem;
+  width: 15rem;
+  height: 15rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.project-card-number.dark-mode {
+  background-color: transparent;
+  display: block;
+  position: absolute;
+  top: -5rem;
+  right: -5rem;
+  width: 15rem;
+  height: 15rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  color: #ffffff !important;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 50%;
+
+  transition: opacity 0.3s ease;
+}
+
+.card-number.fade-in {
+  opacity: 1; /* Fade in by changing opacity to 1 */
+}
+
+.card-number.fade-out {
+  opacity: 0; /* Fade out by changing opacity to 0 */
+}
+
+
+.project-card.card1:before {
+  background-image: url(../../assets/image1.svg);
+}
+
+
+.project-card.card2:before {
+  background-image: url(../../assets/image2.svg);
+}
+
+
+.project-card.card3:before {
+  background-image: url(../../assets/image3.svg);
+}
+
+.project-card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.project-bottom {
+  margin-left: 3rem;
+}
+
+.project-bottom.dark-mode {
+  background-color: transparent;
+}
+
+.project-card-right.dark-mode {
+  background-color: transparent;
+}
+
+.project-card-title {
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.project-card-links-github {
+  text-decoration: none;
+  color: white;
+  margin-left: 2.5rem;
+}
+
+.project-card-links.dark-mode {
+  background-color: transparent;
+}
+
+.visit-website {
+  color: hotpink;
+}
+
+.project-card-links-github:hover {
+  transform: scale(1.3) !important;
+}
+
+.project-card-links-github {
+  transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+@media (max-width: 1340px) {
+  .card {
+    margin: 3rem 5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    margin: 3rem 2rem;
+  }
+  .project-card:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5rem;
+    right: 0rem;
+    width: 10rem;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 935px) {
+  .card {
+    padding: 2rem;
+  }
+  .project-top {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .project-card-heading {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 730px) {
+
+  .project-card:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5rem;
+    right: 2rem;
+    width: 8rem;
+    height: 8rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .card {
+    margin: 0rem;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card-heading {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 550px) {
+  .project-card-heading {
+    font-size: 40%;
+  }
+  
+  .project-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0rem;
+
+  }
+  .project-card-left {
+    display: inline-block;
+    transform: rotate(90deg);
+    transform-origin: left top;
+    position: absolute;
+    top: -1rem;
+  }
+}
+@media (max-width: 513px) {
+  .project-card-left {
+    display: inline-block;
+    transform: rotate(90deg);
+    transform-origin: left top;
+    position: absolute;
+    top: -1rem;
+    left: 13rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .project-bottom {
+    margin-left: 1rem;
+  }
+  .project-card-img {
+    border-radius: 1rem;
+  }
+  .card {
+    padding: 2rem 1.5rem;
+  }
+
+}
+
+@media (max-width: 460px) {
+  .project-card-left {
+    display: inline-block;
+    transform: rotate(90deg);
+    transform-origin: left top;
+    position: absolute;
+    top: -1rem;
+    left: 12rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .project-card:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5rem;
+    right: 2rem;
+    width: 8rem;
+    height: 8rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .project-card-left {
+    display: inline-block;
+    transform: rotate(90deg);
+    transform-origin: left top;
+    position: absolute;
+    top: 1rem;
+    left: 12rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .project-card-title {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  .visit-website {
+    font-size: 0.9rem;
+  }
+  .project-card-links-github {
+    margin-left: 1.2rem;
+  }
+}
+
+.card.light-mode {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0.5), rgba(255, 255, 255, 0.5));
+    border: 0.2rem solid #dddddd;
+
+}
+
+.visit-website.light-mode {
+  color: rgb(133, 205, 252);
+}
+
+.project-card-links-github.light-mode {
+  color: black;
+}

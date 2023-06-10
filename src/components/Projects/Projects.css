@@ -1,0 +1,154 @@
+.projects {
+    background-color: white;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+    max-width: 1800px;
+
+}
+
+.projects.dark-mode {
+    background-color: rgb(18, 18, 18);
+}
+
+.top-p {
+    display: flex;
+}
+
+.top-p.dark-mode {
+    background-color: rgb(18, 18, 18);
+}
+
+.top-p-h1 {
+    font-size: 4rem;
+    padding-top: 3rem;
+}
+
+.top-p-title-image {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.top-p-title-image.dark-mode {
+    background-color: rgb(18, 18, 18);
+}
+
+.project-cartoon-image {
+    height: 15rem;
+}
+
+
+.top-p-span {
+    padding-top: 3rem;
+    display: inline-block;
+}
+
+.bottom-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.bottom-p.dark-mode {
+    background-color: rgb(18, 18, 18);
+}
+
+.bottom-span {
+    padding-top: 3rem;
+}
+
+.demo-bottom-text {
+    background-color: rgb(18, 18, 18);
+    margin-top: 3rem;
+}
+
+.demo-text {
+    background-color: rgb(18, 18, 18);
+}
+
+.bottom-projects { 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    flex-direction: column;
+}
+
+.bottom-projects.dark-mode {
+    background-color: rgb(18, 18, 18);
+}
+
+.bottom-projects.dark-mode > div {
+    background-color: rgb(18, 18, 18);
+}
+
+.bottom-image-cartoon {
+    border-radius: 2rem;
+    height: 10rem;
+}
+
+.upper-text-projects {
+    text-transform: uppercase;
+    font-size: 3rem;
+    
+}
+
+.btm-lft-projects-text {
+    align-items: end;
+}
+
+.btm-rgt-projects-image {
+    display: flex;
+    gap: 3rem;
+    font-size: 2rem;
+}
+@media (max-width: 700px) {
+    .bottom-p {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 730px) {
+    .bottom-p {
+        margin-top: 4rem;
+        gap: 4rem;
+    }
+    
+}
+
+@media (max-width: 565px) {
+    .project-cartoon-image {
+        height: 10rem;
+    }
+}
+@media (max-width: 937px) {
+    .projects {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+}
+@media (max-width: 435px) {
+    .project-cartoon-image {
+        height: 2rem;
+    }
+}
+@media (max-width: 500px) {
+    .projects {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+
+@media (min-width: 1800px) {
+    .projects {
+      padding: 1rem calc((100vw - 1600px) / 2);
+      padding-bottom: 5rem;
+    }
+  }

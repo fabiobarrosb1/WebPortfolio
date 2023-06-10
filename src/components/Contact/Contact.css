@@ -1,0 +1,423 @@
+.contact {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 3rem;
+    display: flex;
+    max-width: 1800px;
+    flex-direction: column;
+    padding-bottom: 4.5rem;
+    gap: 2rem;
+    background-color: var(--background);
+}
+
+.top-c {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.top-title {
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+.top-c-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.top-c-right>div>img {
+    height: 3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+.top-c-right>div>a>img:hover {
+    transform: scale(1.2);
+}
+
+.top-c-right>div>a>img {
+    height: 3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+.top-c-right>div>img:hover {
+    transform: scale(1.2);
+}
+
+.resume {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button-resume {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--green);
+    color: white;
+}
+
+.download-icon {
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.say-hi {
+    display: flex;
+    position: relative;
+}
+
+.say-hi-title {
+    font-size: 3rem;
+}
+
+.orange-text {
+    color: var(--orange);
+}
+
+.top-c-right-icon3 {
+    position: relative;
+    display: inline-block;
+}
+
+.resume-button:hover  {
+    transform: scale(1.1);
+}
+
+.resume-button{
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+.contact-say-hi-img {
+    height: 15rem;
+}
+
+
+
+.non-intrusive-image {
+    position: absolute;
+    top: -14.5rem;
+    right: -5rem;
+    height: 20rem;
+}
+
+.top-c-right-icon3, .top-c-right-icon2,
+.top-c-right-icon1{
+    z-index: 9;
+}
+
+
+#gradient-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(to right, #ff6b6b, #355c7d);
+    overflow: hidden;
+  }
+  
+  #gradient-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #355c7d, #ff6b6b);
+    transition: left 0.3s ease-in-out;
+  }
+  
+  #gradient-button:hover::before {
+    left: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1210px) {
+    .contact-say-hi-img {
+        height: 18rem;
+        top: -12.5rem;
+    }
+}
+
+@media (max-width: 1110px) {
+    .contact-say-hi-img {
+        height: 16rem;
+        top: -11rem;
+    }
+    .top-title {
+        font-size: 3.8rem;
+    }
+    .say-hi-title {
+        font-size: 2.5rem;
+    }
+    .button-resume {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 1010px) {
+    .contact-say-hi-img {
+        height: 14rem;
+        top: -9rem;
+    }
+    .top-c-right>div>a>img {
+        height: 2.5rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .top-title {
+        font-size: 3.5rem;
+    }
+    .button-resume {
+        font-size: 0.8rem;
+        font-weight: normal;
+    }
+    .download-icon {
+        height: 2.3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .contact-say-hi-img {
+        height: 12rem;
+        top: -7.6rem;
+    }
+    .top-title {
+        font-size: 3.3rem;
+    }
+    .say-hi-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 835px) {
+    .top-title {
+        font-size: 3.1rem;
+    }
+}
+
+@media (max-width: 803px) {
+    .top-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 787px) {
+    .top-title {
+        font-size: 2.8rem;
+    }
+    .contact {
+        gap: 1rem;
+    }
+    .contact-say-hi-img {
+        height: 11rem;
+        top: -7.6rem;
+    }
+    .top-c-right>div>a>img {
+        height: 2rem;
+    }
+}
+
+@media (max-width: 755px) {
+    .top-title {
+        font-size: 2.6rem;
+    }
+    .button-resume {
+        padding: 0.8rem;
+    }
+    .download-icon {
+        height: 2rem;
+    }
+}
+
+@media (max-width: 730px) {
+    .contact-say-hi-img {
+        height: 10rem;
+        top: -6.6rem;
+    }
+    .top-c-right>div>a>img {
+        height: 1.8rem;
+    }
+    .top-c {
+        gap: 1.5;
+    }
+}
+
+@media (max-width: 711px) {
+    .contact {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 4.5rem;
+        gap: 2rem;
+        background-color: var(--background);
+    }
+    .contact-say-hi-img {
+        height: 11rem;
+        top: -7.1rem;
+    }
+}
+
+@media (max-width: 701px) {
+    .contact {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 4.5rem;
+        gap: 1.5rem;
+        background-color: var(--background);
+    }
+    .contact-say-hi-img {
+        height: 10rem;
+        top: -6.2rem;
+        right: 0rem;
+    }
+}
+@media (max-width: 615px) {
+    .top-title {
+        font-size: 2.5rem;
+    }
+    .contact-say-hi-img {
+        height: 10rem;
+        top: -6.2rem;
+        right: -2rem;
+    }
+}
+@media (max-width: 599px) {
+    .top-title {
+        font-size: 2.5rem;
+    }
+    .contact-say-hi-img {
+        height: 9rem;
+        top: -5.15rem;
+        right: -2rem;
+    }
+}
+@media (max-width: 599px) {
+    .top-title {
+        font-size: 2.4rem;
+    }
+    .contact-say-hi-img {
+        height: 9rem;
+        top: -5.15rem;
+        right: -2rem;
+    }
+}
+@media (max-width: 582px) {
+    .top-title {
+        font-size: 2.4rem;
+        padding-bottom: 1rem;
+    }
+    .contact-say-hi-img {
+        height: 9rem;
+        top: -5.15rem;
+        right: -3rem;
+    }
+}
+@media (max-width: 582px) {
+    .top-title {
+        font-size: 2.2rem;
+        padding-bottom: 1rem;
+    }
+    .contact-say-hi-img {
+        height: 9rem;
+        top: -5.15rem;
+        right: -2rem;
+    }   
+}
+@media (max-width: 477px) {
+    .contact-say-hi-img {
+        height: 8rem;
+        top: 3.8rem;
+        right: -2rem;
+    }   
+}
+@media (max-width: 455px) {
+    .contact-say-hi-img {
+        height: 7rem;
+        top: 4.8rem;
+        right: -2rem;
+    }   
+}
+@media (max-width: 405px) {
+    .contact-say-hi-img {
+        display: none;
+    }   
+    .contact {
+        padding-bottom: 3.5rem;
+    }
+}
+@media (max-width: 351px) {
+    .say-hi-title {
+        font-size: 1.9rem;
+    }
+}
+@media (max-width: 338px) {
+    .say-hi-title {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 338px) {
+    .top-title {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 324px) {
+    .say-hi-title {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 320px) {
+    .say-hi-title {
+        font-size: 1.7rem;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 530px) {
+    .contact {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+
+
+@media (min-width: 1800px) {
+    .contact {
+      padding: 3rem calc((100vw - 1600px) / 2);
+    }
+  }
