@@ -13,20 +13,31 @@ import MailBlack from "../../assets/webp/email-3small.webp";
 import SayHi from "../../assets/webp/SayHismall.webp";
 import MessageSent from "../../assets/webp/MessageSent1small.webp";
 import { AppContext } from '../AppComponents/AppComponents';
+import FileSaver from 'file-saver';
 
 
 
 const Contact = () => {
-    const handleDownload = () => {
-        const fileUrl = '../../data/MyResume.pdf';
-        const fileName = 'MyResume.pdf';
+    // const handleDownload = () => {
+    //     const fileUrl = '../../data/MyResume.pdf';
+    //     const fileName = 'MyResume.pdf';
     
-        if (window.confirm("Do you want to download this file?")) {
-            fetch(fileUrl)
-              .then(response => response.blob())
-              .then(blob => saveAs(blob, fileName));
-          }
-      }
+    //     if (window.confirm("Do you want to download this file?")) {
+    //         fetch(fileUrl)
+    //         .then(response => response.blob())
+    //         .then(blob => {
+    //             console.log('File fetched:', blob);
+    //             saveAs(blob, fileName);
+    //         });
+    //       }
+    //   }
+
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = '../../../public/Resume.pdf';
+        link.download = 'file.pdf';
+        link.click();
+    };
 
     const context = useContext(AppContext);
     const theme = context.theme;
@@ -38,6 +49,11 @@ const Contact = () => {
     };
 
 
+    const saveFile = () => {
+        FileSaver.saveAs(
+          process.env.REACT_APP_CLIENT_URL + "../../../public/Resume.pdf",
+          "MyResume.pdf"
+        );}
 
   return (
     <div className="contact" id="contact">
@@ -60,7 +76,7 @@ const Contact = () => {
         </div>
         <div className="resume">
             <div className="resume-button">
-                    <button className='button-resume' onClick={handleDownload}>Download My Resume</button>
+                <a aria-label='See my Portfolio' href="./Resume.pdf" target="_blank" rel="noopener noreferrer" className='button-resume' >Download Resume</a>
             </div>
             <div className="download-icon">
                 <img onClick={handleDownload} src={theme === "light" ? DownloadWhite : DownloadBlack} alt="" className="download-icon" />

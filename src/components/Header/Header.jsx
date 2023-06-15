@@ -73,7 +73,7 @@ const Header = () => {
         <div className={`middle-h ${isHamburgerActive === "true" ? "show-header" : "hide-header"}`}>
             <ul className='header-menu header-menu-items header-menu-m'>
                 <li className='header-menu-items-items'><Link to='projects' spy={true} smooth={true}>Projects</Link></li>
-                <li className='header-menu-items-items'><Link to='contact' spy={true} smooth={true}>Resume</Link></li>
+                <li className='header-menu-items-items'><Link to='skills' spy={true} smooth={true}>Skills</Link></li>
                 <li className='header-menu-items-items'><Link to='contact' spy={true} smooth={true}>Contact</Link></li>
                 <li 
                 className={`scale-two toggle-theme-icon ${theme === "dark" ? "dark-mode" : "light-mode"}`}
@@ -141,7 +141,7 @@ const Header = () => {
                 {/* <li><Link to='services' spy={true} smooth={true}>Services</Link></li>
                 <li><Link to='skills' spy={true} smooth={true}>Skills</Link></li> */}
                 <li><Link to='projects' spy={true} smooth={true}>Projects</Link></li>
-                <li><Link to='contact' spy={true} smooth={true}>Resume</Link></li>
+                <li><Link to='skills' spy={true} smooth={true}>Skills</Link></li>
                 <li><Link to='contact' spy={true} smooth={true}>Contact</Link></li>
             </ul>
         </div>

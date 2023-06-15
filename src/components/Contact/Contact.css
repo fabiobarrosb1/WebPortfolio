@@ -63,7 +63,9 @@
     cursor: pointer;
     background-color: var(--green);
     color: white;
+    text-decoration: none;
 }
+
 
 .download-icon {
     height: 2.5rem;

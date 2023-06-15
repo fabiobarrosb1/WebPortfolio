@@ -8,6 +8,7 @@ import FadeIn from './components/FadeIn/FadeIn';
 
 
 function App() {
+
   return (
     <div className="App">
       <AppProvider>

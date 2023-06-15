@@ -5,6 +5,7 @@ import SuperM from "../../assets/webp/SuperMsmall.webp";
 import FoodTracker from "../../assets/webp/FoodTrackersmall.webp";
 import FitClub from "../../assets/webp/FitClubsmall.webp";
 import { AppContext } from '../AppComponents/AppComponents';
+import InfiniteCarousel from '../Carousel/Carousel';
 
 
 const Projects = () => {
@@ -16,7 +17,7 @@ const Projects = () => {
             title: 'Gym WebApp',
             imageUrl: FitClub,
             description: 'This one I made with a YouTube video.',
-            url: "https://visionary-travesseiro-3fb028.netlify.app",
+            url: "https://gymwebapp-reactjs.netlify.app/",
             number: "01",
             tools: "REACT JS, CSS, FRAMER MOTION",
         },
@@ -25,7 +26,7 @@ const Projects = () => {
             title: 'Food Calorie Tracker',
             imageUrl: FoodTracker,
             description: 'This project was made on a JavaScript Course that I took.',
-            url: "https://keen-clafoutis-e86f40.netlify.app",
+            url: "https://calorietracker-react.netlify.app/",
             number: "02",
             tools: "JAVASCRIPT, HTML, CSS, API",
         },
@@ -34,7 +35,7 @@ const Projects = () => {
             title: 'WebStore',
             imageUrl: SuperM,
             description: 'This was made on a React Course. It has both, frontend and backend',
-            url: "https://taupe-cassata-5d1ff5.netlify.app",
+            url: "https://superm-onlinestore.netlify.app/",
             number: "03",
             tools: "REACT JS, API, REDUX",
         }
@@ -52,8 +53,10 @@ const Projects = () => {
             {cards.map((card, index) => (
                 <Card key={index} {...card} />
             ))}
-        </div>        
+        </div>
+        <InfiniteCarousel />  
     </div>
+
   )
 }
 
