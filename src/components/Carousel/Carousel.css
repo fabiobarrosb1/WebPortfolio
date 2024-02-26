@@ -16,6 +16,10 @@
     align-items: center;
   }
 
+  .carousel-container { 
+    background-color: transparent !important;
+  }
+
   /* background: linear-gradient(180deg, rgba(245, 245, 245, 0.5), rgba(255, 255, 255, 0.5)); */
 
   .image-carousel {
@@ -42,6 +46,7 @@
     display: flex;
     align-items: center;
     text-align: center;
+    background-color: transparent;
 
   }
 
@@ -63,6 +68,7 @@
     margin-left: 1rem;
     margin-right: 1rem;
     align-items: center;
+    background-color: transparent;
   }
 
 
@@ -94,6 +100,8 @@
     0% { left: 0; }
     100% { left: -100%; }
   }
+
+  
 
 
   @media (max-width: 768px) {
@@ -170,7 +178,7 @@
 
 @media (max-width: 1002px) {
     .marquee {
-        height: 115px;
+        height: 105px;
         width: 665px;
       }
       .orb {
@@ -185,11 +193,15 @@
         align-items: center;
         align-items: center;
       }
+      .image-carousel {
+        width: 2.2rem;
+        max-height: 2.4rem;
+      }
 }
 
 @media (max-width: 855px) {
     .marquee {
-        height: 120px;
+        height: 105px;
         width: 664px;
       }
       .orb {
@@ -212,7 +224,7 @@
 
 @media (max-width: 830px) {
     .marquee {
-        height: 120px;
+        height: 105px;
         width: 605px;
       }
       .orb {
@@ -292,8 +304,8 @@
         align-items: center;
       }
       .image-carousel {
-        width: 2.7rem;
-        max-height: 3rem;
+        width: 2.2rem;
+        max-height: 2.4rem;
       }
 
 }
@@ -318,8 +330,8 @@
         align-items: center;
       }
       .image-carousel {
-        width: 2.7rem;
-        max-height: 3rem;
+        width: 2.2rem;
+        max-height: 2.4rem;
       }
 
 }
@@ -350,6 +362,25 @@
         align-items: center;
       }
 }
+@media (max-width: 507px) {
+  .marquee {
+      height: 160px;
+      width: 370px;
+    }
+    .orb {
+      width: 38px;
+      height: 50px;
+      background: transparent;
+      border-radius: 1rem;
+      display: inline-block;
+      margin: 0 0px;
+      float: left;
+      transition: all .2s ease-out;
+      align-items: center;
+      vertical-align: middle;
+      align-items: center;
+    }
+}
 
 @media (max-width: 551px) {
     .carousel-container {
@@ -362,6 +393,7 @@
       .carousel-container>div.skills-text-right {
         display: none;
       }
+
 }
 
 @media (max-width: 475px) {
