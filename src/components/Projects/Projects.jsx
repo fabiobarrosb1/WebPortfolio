@@ -4,6 +4,7 @@ import Card from "../Card/Card";
 import SuperM from "../../assets/webp/SuperMsmall.webp";
 import FoodTracker from "../../assets/webp/FoodTrackersmall.webp";
 import FitClub from "../../assets/webp/FitClubsmall.webp";
+import SpotifyProject from "../../assets/SpotifyProject.webp";
 import { AppContext } from "../AppComponents/AppComponents";
 import InfiniteCarousel from "../Carousel/Carousel";
 
@@ -13,30 +14,40 @@ const Projects = () => {
   const cards = [
     {
       id: "card1",
+      title:
+        "Productivity Hub: Track Your Spotify, Manage Tasks, Time, and Notes",
+      imageUrl: SpotifyProject,
+      description: "Designed and built entirely by me.",
+      url: "https://dashboard-flow.vercel.app",
+      number: "01",
+      tools: "REACT JS, REDUX, SPOTIFY API, WEB PLAYBACK SDK",
+    },
+    {
+      id: "card2",
       title: "Gym WebApp",
       imageUrl: FitClub,
       description: "This one I made with a YouTube video.",
       url: "https://gymwebapp-reactjs.netlify.app/",
-      number: "01",
+      number: "02",
       tools: "REACT JS, CSS, FRAMER MOTION",
     },
     {
-      id: "card2",
+      id: "card3",
       title: "Food Calorie Tracker",
       imageUrl: FoodTracker,
       description: "This project was made on a JavaScript Course that I took.",
       url: "https://calorietracker-react.netlify.app/",
-      number: "02",
+      number: "03",
       tools: "JAVASCRIPT, HTML, CSS, API",
     },
     {
-      id: "card3",
+      id: "card4",
       title: "WebStore",
       imageUrl: SuperM,
       description:
         "This was made on a React Course. It has both, frontend and backend",
       url: "https://superm-onlinestore.netlify.app/",
-      number: "03",
+      number: "04",
       tools: "REACT JS, API, REDUX, STRIPE",
     },
   ];

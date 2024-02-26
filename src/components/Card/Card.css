@@ -131,6 +131,10 @@
   background-image: url(../../assets/image3.svg);
 }
 
+.project-card.card4:before {
+  background-image: url(../../assets/image4.svg);
+}
+
 .project-card-img {
   width: 100%;
   height: auto;
