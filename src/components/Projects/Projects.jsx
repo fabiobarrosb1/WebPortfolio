@@ -5,6 +5,7 @@ import SuperM from "../../assets/webp/SuperMsmall.webp";
 import FoodTracker from "../../assets/webp/FoodTrackersmall.webp";
 import FitClub from "../../assets/webp/FitClubsmall.webp";
 import SpotifyProject from "../../assets/SpotifyProject.webp";
+import Fruity from "../../assets/Fruity.webp";
 import { AppContext } from "../AppComponents/AppComponents";
 import InfiniteCarousel from "../Carousel/Carousel";
 
@@ -24,30 +25,39 @@ const Projects = () => {
     },
     {
       id: "card2",
+      title: "Fruity - 3D Slider",
+      imageUrl: Fruity,
+      description: "Simple but effective and pretty animation.",
+      url: "https://3-d-slider-seven.vercel.app",
+      number: "02",
+      tools: "REACT JS, CSS ANIMATIONS",
+    },
+    {
+      id: "card3",
       title: "Gym WebApp",
       imageUrl: FitClub,
       description: "This one I made with a YouTube video.",
       url: "https://gymwebapp-reactjs.netlify.app/",
-      number: "02",
+      number: "03",
       tools: "REACT JS, CSS, FRAMER MOTION",
     },
     {
-      id: "card3",
+      id: "card4",
       title: "Food Calorie Tracker",
       imageUrl: FoodTracker,
       description: "This project was made on a JavaScript Course that I took.",
       url: "https://calorietracker-react.netlify.app/",
-      number: "03",
+      number: "04",
       tools: "JAVASCRIPT, HTML, CSS, API",
     },
     {
-      id: "card4",
+      id: "card5",
       title: "WebStore",
       imageUrl: SuperM,
       description:
         "This was made on a React Course. It has both, frontend and backend",
       url: "https://superm-onlinestore.netlify.app/",
-      number: "04",
+      number: "05",
       tools: "REACT JS, API, REDUX, STRIPE",
     },
   ];
