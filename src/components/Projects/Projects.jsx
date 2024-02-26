@@ -28,7 +28,7 @@ const Projects = () => {
       title: "Fruity - 3D Slider",
       imageUrl: Fruity,
       description: "Simple but effective and pretty animation.",
-      url: "https://3-d-slider-seven.vercel.app",
+      url: "https://fruity-3d-slider.vercel.app",
       number: "02",
       tools: "REACT JS, CSS ANIMATIONS",
     },
