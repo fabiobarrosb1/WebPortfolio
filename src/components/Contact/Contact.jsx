@@ -32,7 +32,7 @@ const Contact = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "../../../public/Resume.pdf";
+    link.href = "../../../public/Resume2024.pdf";
     link.download = "file.pdf";
     link.click();
   };
@@ -48,8 +48,8 @@ const Contact = () => {
 
   const saveFile = () => {
     FileSaver.saveAs(
-      process.env.REACT_APP_CLIENT_URL + "../../../public/Resume.pdf",
-      "MyResume.pdf"
+      process.env.REACT_APP_CLIENT_URL + "../../../public/Resume2024.pdf",
+      "Resume2024.pdf"
     );
   };
 
@@ -114,7 +114,7 @@ const Contact = () => {
         <div className="resume-button">
           <a
             aria-label="See my Portfolio"
-            href="./Resume.pdf"
+            href="./Resume2024.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="button-resume"
@@ -125,7 +125,7 @@ const Contact = () => {
         <div className="download-icon">
           <a
             aria-label="See my Portfolio"
-            href="./Resume.pdf"
+            href="./Resume2024.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
