@@ -15,11 +15,10 @@ const Projects = () => {
   const cards = [
     {
       id: "card1",
-      title:
-        "Productivity Hub: Track Your Spotify, Manage Tasks, Time, and Notes",
+      title: "Flowy: Track Your Spotify, Manage Tasks, Time, and Notes",
       imageUrl: SpotifyProject,
       description: "Designed and built entirely by me.",
-      url: "https://dashboard-flow.vercel.app",
+      url: "https://flowy-app.vercel.app",
       number: "01",
       tools: "REACT JS, REDUX, SPOTIFY API, WEB PLAYBACK SDK",
     },
